@@ -1,0 +1,370 @@
+/* styles.css */
+html, body {
+    height: 100%; /* Establecer la altura del cuerpo del documento al 100% de la ventana gráfica */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+  }
+  
+  .barra {
+    width: 100%;
+    height: 10.25%; /* 100% dividido entre 16 barras para ocupar toda la altura */
+    background-color: #ccc;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  /* Ajustar el tamaño del texto dentro de las barras si es necesario */
+  .barra {
+    font-size: 18px;
+  }
+  /* styles.css */
+#barra1 {
+    background-color: black; /* Fondo negro */
+    position: fixed; /* Barra fija */
+    top: 0; /* Fijar en la parte superior */
+    z-index: 1; /* Asegurar que esté por encima del resto de las barras */
+  } 
+  /* styles.css */
+#barra2 {
+    margin-top: 50px; /* Ajustar margen superior para evitar que sea cubierta por la barra 1 */
+  }
+/* styles.css */
+
+/* Estilo para la barra 3 */
+
+/* Estilo para el contenedor */
+#barra3 .container {
+    position: relative;
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilo para el wrapper */
+#barra3 .container .wrapper {
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+
+/* Estilo para la barra 3 */
+#barra3 {
+    background-image: url("imagen1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80%; /* Ajustar la altura al 150% de la ventana gráfica */
+}
+
+/* Estilo para el contenedor */
+#barra3 .container {
+    position: relative;
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+}
+
+/* Estilo para el wrapper */
+#barra3 .container .wrapper {
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+/* Resto de estilos... */
+
+#barra3 {
+    background-image: url("imagen1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Estilo para el contenedor */
+#barra3 .container {
+    position: relative;
+}
+
+/* Estilo para el wrapper */
+#barra3 .container .wrapper {
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+/* Estilo para el wrapper-holder */
+#barra3 .container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate; /* Aplicar animación slider */
+}
+
+/* Repetir el estilo para cada imagen */
+#barra3 .container #imagen-web-1 {
+    background-image: url("imagen1.webp");
+    background-position: center;
+}
+
+#barra3 .container #imagen-web-2 {
+    background-image: url("imagen2.webp");
+    background-position: center;
+}
+
+#barra3 .container #imagen-web-3 {
+    background-image: url("imagen3.jpg");
+    background-position: center;
+}
+
+#barra3 .container #imagen-web-4 {
+    background-image: url("imagen4.jpg");
+    background-position: center;
+}
+
+/* Estilo para los botones */
+#barra3 .container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+/* Estilo para posicionar los botones */
+#barra3 .container .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+/* Estilo para la animación del slider */
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-300%); } /* Modificar la transformación final */
+}
+
+/* Fin del código CSS */
+
+/* Comentario o nota */
+/* Asegúrate de que el HTML tenga un elemento con el ID "barra3" para aplicar estos estilos correctamente. */
+#barra5 {
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagen-barra5 {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper {
+  width: 106%;
+  padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 360px;
+  background-color: #323232;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icons img {
+  width: 120px;
+}
+
+.product-txt {
+  flex-basis: 50%;
+}
+
+.product-txt h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.product-txt p {
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
+.product-img {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.product-img img {
+  width: 120px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 13px 55px;
+  border: 1px solid yellow;
+  border-radius: 25px;
+  color: yellow;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+/* Estilo para la barra 6 con texto */
+#barra6 {
+    height: 10%; /* Mismo alto que la barra 5 */
+    overflow: hidden; /* Ocultar contenido que desborde */
+    position: relative; /* Para posicionar el texto */
+  }
+  
+  #barra6 p {
+    text-align: center; /* Centrar el texto */
+    line-height: 10px; /* Centrar verticalmente el texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+  }
+  
+  
+  /* Estilo para la barra 7 con video */
+  #barra7 {
+    height: 70%; /* Mismo alto que la barra 5 */
+    overflow: hidden; /* Ocultar contenido que desborde */
+    position: relative; /* Para posicionar el video */
+  }
+  
+  #barra7 iframe {
+    width: 100%; /* Ancho del video */
+    height: 100%; /* Altura del video */
+  }
+  /* styles.css */
+
+/* Estilo para la barra 8 con texto */
+#barra8 {
+    height: 10%; /* Mismo alto que la barra 5 */
+    overflow: hidden; /* Ocultar contenido que desborde */
+    position: relative; /* Para posicionar el texto */
+  }
+  
+  #barra8 p {
+    text-align: center; /* Centrar el texto */
+    line-height: 10px; /* Centrar verticalmente el texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+  }
+  /* Estilo para la barra 9 con productos scrollables */
+#barra9 {
+    height: 70%; /* Mismo alto que la barra 5 */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitar que los elementos se dividan en varias líneas */
+    position: relative; /* Para posicionar los productos */
+  }
+  
+  /* Estilo para los productos dentro de la barra 9 */
+  #barra9 .producto {
+    display: inline-block; /* Mostrar los productos en línea */
+    width: 200px; /* Ancho de cada producto */
+    height: 100%; /* Mismo alto que la barra */
+    margin-right: 10px; /* Margen entre los productos */
+  }
+  /* styles.css */
+
+/* Estilo para la barra 10 con texto */
+#barra10 {
+    height: 10%; /* Mismo alto que la barra 5 */
+    overflow: hidden; /* Ocultar contenido que desborde */
+    position: relative; /* Para posicionar el texto */
+  }
+  
+  #barra10 p {
+    text-align: center; /* Centrar el texto */
+    line-height: 10px; /* Centrar verticalmente el texto */
+    font-size: 24px; /* Tamaño de fuente del texto */
+  }
+  /* Estilo para la barra 11 con productos scrollables */
+#barra11 {
+    height: 70%; /* Mismo alto que la barra 5 */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitar que los elementos se dividan en varias líneas */
+    position: relative; /* Para posicionar los productos */
+  }
+  
+  /* Estilo para los productos dentro de la barra 11 */
+  #barra11 .producto {
+    display: inline-block; /* Mostrar los productos en línea */
+    width: 200px; /* Ancho de cada producto */
+    height: 100%; /* Mismo alto que la barra */
+    margin-right: 10px; /* Margen entre los productos */
+  }
+/* styles.css */
+
+/* Estilo para la barra 12 */
+#barra12 {
+    height: 30%; /* Ajuste del tamaño al 30% */
+  }
+/* Estilo para la barra 14 con scroll horizontal */
+#barra14 {
+    height: 70%; /* Mismo alto que la barra 5 */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitar que los elementos se dividan en varias líneas */
+    position: relative; /* Para posicionar los elementos */
+  }
+  
+  /* Estilo para los elementos dentro de la barra 14 */
+  #barra14 .elemento {
+    display: inline-block; /* Mostrar los elementos en línea */
+    width: 200px; /* Ancho de cada elemento */
+    height: 100%; /* Mismo alto que la barra */
+    margin-right: 10px; /* Margen entre los elementos */
+  }
+  /* styles.css */
+
+/* Estilo para la barra 16 */
+#barra16 {
+    height: 100%; /* Mismo alto que la barra */
+    position: relative; /* Para posicionar los cuadrados */
+  }
+  
+  /* Estilo para los cuadrados dentro de la barra 16 */
+  #barra16 .cuadrado {
+    width: 50%; /* Ancho de cada cuadrado */
+    height: 50%; /* Altura de cada cuadrado */
+    position: absolute; /* Posición absoluta para colocar en las esquinas */
+  }
+  
+  /* Estilo para cada cuadrado */
+  #barra16 .cuadrado1 {
+    top: 0;
+    left: 0;
+  }
+  
+  #barra16 .cuadrado2 {
+    top: 0;
+    right: 0;
+  }
+  
+  #barra16 .cuadrado3 {
+    bottom: 0;
+    left: 0;
+  }
+  
+  #barra16 .cuadrado4 {
+    bottom: 0;
+    right: 0;
+  }
