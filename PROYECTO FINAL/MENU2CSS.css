@@ -1,0 +1,180 @@
+/* styles.css */
+html, body {
+    height: 100%; /* Establecer la altura del cuerpo del documento al 100% de la ventana gráfica */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+}
+
+.barra {
+    width: 100%;
+    height: 10.25%; /* 100% dividido entre 16 barras para ocupar toda la altura */
+    background-color: #ccc;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px; /* Ajustar el tamaño del texto dentro de las barras si es necesario */
+}
+
+/* Estilo para la sección 1 */
+#barra1 {
+    background-color: black; /* Fondo negro */
+    position: fixed; /* Sección fija */
+    top: 0; /* Fijar en la parte superior */
+    z-index: 1; /* Asegurar que esté por encima del resto de las secciones */
+}
+
+/* Estilo para la sección 2 */
+#barra2 {
+    margin-top: 50px; /* Ajustar margen superior para evitar que sea cubierta por la sección 1 */
+}
+
+/* Estilo para la sección 3 */
+#barra3 {
+    background-image: url("imagen1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh; /* Ajustar la altura al 80% del viewport height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de la sección 3 */
+#barra3 .container {
+    width: 60vw; /* Ancho del contenedor */
+    height: 75vh; /* Altura del contenedor */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+/* Estilo para el wrapper de la sección 3 */
+#barra3 .container .wrapper {
+    width: 100%; /* Ancho del wrapper */
+    height: 100%; /* Altura del wrapper */
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    animation: slider 30s ease-in-out infinite alternate; /* Aplicar animación slider */
+}
+
+/* Repetir el estilo para cada imagen */
+#barra3 .container img {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilo para los botones de la sección 3 */
+#barra3 .container .button-holder {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+#barra3 .container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+/* Estilo para la animación del slider */
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-300%); } /* Modificar la transformación final */
+}
+/* Fin del código CSS */
+#barra5 {
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .imagen-barra5 {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+  }
+  
+  .swiper-slide {
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+  }
+  
+  .icons i {
+        font-size: 20px;
+        color: #ffb900;
+  }
+
+  .icons img{
+        width:120px;
+  }
+
+  .product-content  {
+        display: flex ;
+        justify-content: space-between;
+  }
+
+  .product-txt {
+        flex-basis: 50%;
+        text-align: left;
+  }
+
+  .product-txt-span  {
+        font-size: 25px;
+        color: #ffb900;
+        font-weight: bold
+  }
+  
+  .product-txt h3 {
+        font-size: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+  }
+  
+  .product-txt p {
+        font-size: 14px;
+        color: #C4C4C4;
+  }
+  
+  .product-img {
+        flex-basis: 50%;
+        text-align: right;
+  }
+  
+  .product-img img {
+        width: 120px;
+  }
+  
+  .btn-1 {
+        display: inline-block;
+        padding: 13px 55px;
+        border: 1px solid yellow;
+        border-radius: 25px;
+        color: yellow;
+        text-decoration: none;
+        margin-top: 50px;
+  }
+  
