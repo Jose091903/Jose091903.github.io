@@ -1,0 +1,410 @@
+/* generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(255, 221, 87);
+}
+
+/* encabezado */
+header {
+  background: rgb(51, 51, 51);
+  color: rgba(255, 255, 255, 1);
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px; 
+}
+
+nav a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.4s ease;
+}
+
+nav a:hover {
+  color: rgba(255, 204, 0, 1);;
+}
+
+/* sección principal */
+.bienvenido {
+  padding: 100px 20px;
+}
+
+.bienvenido h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.bienvenido p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* banner */
+.banner {
+  background-image: url('banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bienvenido-container {
+  background-color: rgba(51, 51, 51, 0.6);
+  border-radius: 30px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: left;
+  width: 800px;
+  height: 530px;
+}
+
+.separador {
+  height: 2px; 
+  background-color: #333; 
+  margin: 0 70px; 
+}
+.acerca h1 {
+  color: rgb(51, 51, 51);
+  padding: 0 70px;
+  font-size: 35px;
+}
+
+.acerca p {
+  color: rgb(51, 51, 51);
+  padding: 0 70px;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.ubicacion {
+  padding: 10px 500px;
+  text-align: center;
+}
+
+.ubicacion h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.map {
+  margin-bottom: 20px;
+}
+
+.ubicacion p {
+  font-size: 25px;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* productos */
+.btn {
+  display: inline-block;
+  background-color: rgba(255, 204, 0, 1);; 
+  color: rgba(51, 51, 51, 1);
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(207, 169, 15); 
+}
+
+.guitarras, .bajos, .novedades {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.guitarras h2, .bajos h2, .teclados h2, .baterias h2, .novedades h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.producto-grid {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.producto-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.producto-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.producto-card p {
+  font-size: 180px;
+  margin-bottom: 20px;
+}
+
+/* detalles */
+.producto-detalle {
+  padding: 60px 20px;
+}
+
+.producto-contenido {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.producto-imagen-container {
+  flex: 0 0 50%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.producto-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.producto-info-container {
+  flex: 0 0 50%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.producto-nombre {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.producto-descripcion {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.producto-caracteristicas h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.producto-caracteristicas h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.producto-caracteristicas li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.producto-audio h2{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.producto-video h2{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* formulario de registro */
+.registro {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-registro {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 1);
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgba(51, 51, 51, 1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgba(255, 204, 0, 1);
+  color: rgba(51, 51, 51, 1);
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(207, 169, 15);
+}
+
+/* pie de página */
+.social-container img {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos generales para todas las pantallas */
+/* Puedes mantener estos estilos tal como están en tu CSS original */
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  .logo img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto 10px;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  .bienvenido {
+    padding: 50px 20px;
+  }
+  .bienvenido h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .bienvenido p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .separador {
+    margin: 20px 0;
+  }
+  .acerca h1 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  .acerca p {
+    font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .ubicacion {
+    padding: 20px;
+    text-align: center;
+  }
+  .ubicacion h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .ubicacion p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .social-container img {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
